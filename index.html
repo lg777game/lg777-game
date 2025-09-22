@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG777 Game: Your Secure Online Gaming Platform Guide</title>
+    <meta name="description" content="Explore LG777 Game's features, security, and bonuses. Learn how to play responsibly on this popular online casino platform.">
+    <meta name="keywords" content="LG777 game, online gaming, casino platform, secure gaming">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lg777.pk/">
+    <style>
+        :root {
+            --primary: #1a5cff;
+            --primary-dark: #0d47c7;
+            --secondary: #ff3e7a;
+            --dark: #0f1422;
+            --darker: #0a0e18;
+            --light: #f5f7ff;
+            --gray: #8a94a6;
+            --card-bg: #1a2235;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        body {
+            background-color: var(--darker);
+            color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: rgba(10, 14, 24, 0.95);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 50px;
+            transition: var(--transition);
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+            background-color: rgba(26, 92, 255, 0.1);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(26, 92, 255, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(26, 92, 255, 0.4);
+        }
+        
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 80px 0;
+            gap: 50px;
+            min-height: 80vh;
+        }
+        
+        .hero-content {
+            flex: 1;
+        }
+        
+        .hero-image {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+            transition: var(--transition);
+        }
+        
+        .hero-image img:hover {
+            transform: translateY(-10px);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--gray);
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+        
+        .section-desc {
+            font-size: 1.1rem;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 20px auto 0;
+        }
+        
+        /* Features Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--light);
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        
+        .stat-desc {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* FAQ Styles */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--card-bg);
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+        
+        .faq-item:hover {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px;
+            max-height: 300px;
+        }
+        
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+            color: var(--primary);
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        /* Footer */
+        footer {
+            background: #080b14;
+            padding: 60px 0 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-logo {
+            height: 50px;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+        
+        .copyright {
+            color: #555;
+            font-size: 0.85rem;
+            margin-top: 20px;
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 60px 0;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 5px 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+        
+        /* Animation for scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#">
+                    <img src="https://lg777.pk/wp-content/uploads/2025/06/lg777-game-logo.webp" alt="LG777 Game Logo" class="logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#security">Security</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#" class="btn">Join Now</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>LG777 Game: Premium Online Gaming Experience</h1>
+                <p class="subtitle">Discover an exceptional gaming platform with a wide selection of games, top-tier security, and exciting bonuses. Designed for both casual players and serious enthusiasts.</p>
+                <p>With a focus on user experience and fair play, the <a href="https://lg777.pk/">LG777 game <a/>platform has established itself as a trusted name in the online gaming community. Explore our diverse game library and enjoy a seamless gaming journey with the LG777 game environment.</p>
+                <a href="#" class="btn">Get Started Today</a>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="https://lg777.pk/wp-content/uploads/2025/06/LG777-Game-Banner-3-473x1024.webp" alt="LG777 Game Platform">
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Why Choose Our Platform?</h2>
+                <p class="section-desc">We provide a premium gaming experience with features designed for modern players</p>
+            </div>
+            <div class="features">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Extensive Game Library</h3>
+                    <p>Explore hundreds of high-quality games including slots, table games, and live dealer options. Our collection is regularly updated with new titles.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Advanced Security</h3>
+                    <p>Your safety is our priority. We employ state-of-the-art encryption technology to protect your personal information and financial transactions.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">💰</div>
+                    <h3>Generous Bonuses</h3>
+                    <p>Take advantage of our attractive welcome offers and ongoing promotions. Our loyalty program rewards regular players with exclusive benefits.</p>
+                </div>
+            </div>
+            
+            <div class="stats fade-in">
+                <div class="stat-value">$100B+</div>
+                <div class="stat-desc">Projected online gambling market value by 2027 (Source: Statista)</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Game Categories</h2>
+                <p class="section-desc">Something for every type of player with diverse gaming options</p>
+            </div>
+            <div class="features">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎰</div>
+                    <h3>Slot Games</h3>
+                    <p>From classic fruit machines to modern video slots with immersive themes and bonus features. Experience thrilling gameplay with progressive jackpots.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">♠️</div>
+                    <h3>Table Games</h3>
+                    <p>Enjoy digital versions of casino classics like blackjack, roulette, baccarat, and poker. Multiple variations and betting limits available.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">👨‍💼</div>
+                    <h3>Live Dealer</h3>
+                    <p>Immerse yourself in the authentic casino atmosphere with our live dealer games. Interact with professional dealers in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="security">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Security & Fair Play</h2>
+                <p class="section-desc">Your safety and fair gaming experience are our top priorities</p>
+            </div>
+            <div class="features">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Account Protection</h3>
+                    <p>We use advanced encryption to safeguard your account information. Our verification processes ensure only authorized users can access your profile.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">⚖️</div>
+                    <h3>Fair Gaming</h3>
+                    <p>All our games use certified random number generators to guarantee fair outcomes. Regular audits ensure compliance with industry standards.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🧘</div>
+                    <h3>Responsible Gaming</h3>
+                    <p>We promote healthy gaming habits with tools like deposit limits, self-exclusion options, and reality checks. Your wellbeing is important to us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-desc">Quick answers to common questions about our platform</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        How do I create an account?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Creating an account is simple. Click the "Join Now" button, fill in the required information, verify your email address, and you'll be ready to start playing on our platform.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        What payment methods are accepted?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept various payment methods including credit/debit cards, e-wallets, and bank transfers. All transactions are encrypted for your security.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        Is my personal information safe?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we use industry-standard encryption technology to protect your data. We never share your personal information with third parties without your consent.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        How can I practice responsible gaming?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide tools to help you manage your gaming activity, including deposit limits, cooling-off periods, and self-exclusion options. Gaming should always be enjoyable and within your means.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <img src="https://lg777.pk/wp-content/uploads/2025/06/lg777-game-logo.webp" alt="LG777 Game Logo" class="footer-logo">
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#games">Games</a>
+                    <a href="#security">Security</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Responsible Gaming</a>
+                </div>
+                <p class="copyright">© 2023 LG777 Game Platform. All rights reserved. | Gambling can be addictive. Please play responsibly. | The <a href="https://lg777.pages.dev/">LG777</a> game platform is intended for legal jurisdictions only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentNode;
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Scroll animation
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInOnScroll = () => {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+        
+        // Check on load and scroll
+        window.addEventListener('load', fadeInOnScroll);
+        window.addEventListener('scroll', fadeInOnScroll);
+    </script>
+</body>
+</html>
